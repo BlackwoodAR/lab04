@@ -1,11 +1,12 @@
 # lab04
 
-All of these questions deal with the ticket machine example bundled in this repo. You should fork this repo and clone the fork to work on the code locally. 
+All of these questions deal with the ticket machine example bundled in this repo. You should fork this repo and clone the fork to work on the code locally.
 
 ## How can we tell from just its header that `setPrice` is a method and not a constructor?
 ```
 public void setPrice(int cost)
 ```
+It has void in the header so its not going to give an output.
 
 ## Complete the body of the setPrice method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
 
@@ -36,8 +37,8 @@ public void discount(int amount)
 ```
 System.out.println("My cat has green eyes.");
 ```
-
-## Add a method called `prompt` to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a `void` return type and take no parameters. The body of the method should print the following single line of output: 
+My cat has green eyes.
+## Add a method called `prompt` to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a `void` return type and take no parameters. The body of the method should print the following single line of output:
 ```
 Please insert the correct amount of money.
 ```
@@ -58,7 +59,6 @@ System.out.println("# price cents.");
 ```
 The price of a ticket is xyz cents.
 ```
-
 
 ## Create two ticket machines with differently priced tickets. Do calls to their showPrice methods show the same output, or different? How do you explain this effect?
 

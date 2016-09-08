@@ -17,7 +17,9 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
-
+    // The Score
+    private int score;
+    // 
     /**
      * Create a machine that issues tickets of the given price.
      * Note that the price must be greater than zero, and there
@@ -30,6 +32,10 @@ public class TicketMachine
         total = 0;
     }
 
+    /**public void setPrice
+    {Price = cost
+    }
+    
     /**
      * Return the price of a ticket.
      */
@@ -39,6 +45,14 @@ public class TicketMachine
     }
 
     /**
+     * Increase score by the given number of points.
+     */
+    public void increase(int points)
+    {
+        score = score + points;
+    }
+   
+     /**
      * Return the amount of money already inserted for the
      * next ticket.
      */
