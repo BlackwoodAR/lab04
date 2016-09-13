@@ -32,8 +32,12 @@ public class TicketMachine
         total = 0;
     }
 
-    /**public void setPrice
-    {Price = cost
+    /**
+     * Set the price of a ticket.
+     */
+    public void setPrice()
+    {
+        price = balance - price;
     }
     
     /**
@@ -89,4 +93,36 @@ public class TicketMachine
         // Clear the balance.
         balance = 0;
     }
+    
+    /**
+     * Reduce price by the given amount.
+     */
+    public void discount(int amount)
+    {
+       price=-amount;
+    }
+    
+    /**
+     * Prompt asking for the correct amount.
+     */
+     public void prompt() 
+    {
+       System.out.println("Please insert the correct amount of money.");
+    }
+    
+    /**
+     *Shows the price of ticket
+     */
+     public void showPrice() 
+     {
+      System.out.println("The price of a ticket is " + price + " cents.");
+     }
+     
+     /**
+      * Sets all values to 0
+      */
+     public void empty() 
+     {
+       total = 0;
+     }
 }
